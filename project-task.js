@@ -107,7 +107,7 @@ Step-by-Step:
 */
 
 const totalStockValue = products.reduce((sum, product) => {
-  return product.inStock === true ? sum + product.price : sum + 0;
+  return product.inStock ? sum + product.price : sum + 0;
 }, 0);
 
 console.log("Total value in stock:", totalStockValue);
