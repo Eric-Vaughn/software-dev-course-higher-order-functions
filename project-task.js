@@ -83,7 +83,7 @@ Step-by-Step:
 */
 
 function applyDiscount(discount) {
-  return (product) => product.price * (discount / 100);
+  return (product) => product.price - product.price * (discount / 100);
 }
 
 // Add new property 'salePrice'
