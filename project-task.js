@@ -64,12 +64,9 @@ Step-by-Step:
 3. Store the result in a new variable.
 */
 
-const productsUppercase = products.map((product) => ({
-  ...product,
-  name: product.name.toUpperCase(),
-}));
+const productNamesUppercase = products.map((product) => product.name.toUpperCase());
 
-console.log("Uppercased names:", productsUppercase);
+console.log("Uppercased names:", productNamesUppercase);
 
 /*
 🔹 Task 3: Generate Discounted Prices
