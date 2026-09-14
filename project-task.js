@@ -96,7 +96,7 @@ products.forEach((product) => {
 });
 
 // Print the mutated array of products
-console.log("Array of updated products:", products);
+console.log("Discounted products (50%):", products);
 
 /*
 🔹 Task 4: Calculate Total Inventory Value
@@ -108,6 +108,12 @@ Step-by-Step:
 2. Add only the prices of products where `inStock` is true.
 3. Store the total in a new variable.
 */
+
+const totalStockValue = products.reduce((sum, product) => {
+  return product.inStock === true ? sum + product.price : sum + 0;
+}, 0);
+
+console.log("Total value in stock:", totalStockValue);
 
 // ============================================
 // 🧪 Console Test Your Work
